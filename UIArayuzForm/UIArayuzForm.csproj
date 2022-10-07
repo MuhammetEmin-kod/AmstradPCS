@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03AF8127-C3A7-4839-9DE6-D76884F72175}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UIArayuzForm</RootNamespace>
+    <AssemblyName>UIArayuzForm</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminsP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsP.Designer.cs">
+      <DependentUpon>AdminsP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AmsCpcP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmsCpcP.Designer.cs">
+      <DependentUpon>AmsCpcP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AmsGxP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmsGxP.Designer.cs">
+      <DependentUpon>AmsGxP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AmsNcP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmsNcP.Designer.cs">
+      <DependentUpon>AmsNcP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AmsPcwP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmsPcwP.Designer.cs">
+      <DependentUpon>AmsPcwP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ControlClears.cs" />
+    <Compile Include="LoginP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginP.Designer.cs">
+      <DependentUpon>LoginP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MdiAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MdiAnaForm.Designer.cs">
+      <DependentUpon>MdiAnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewsP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewsP.Designer.cs">
+      <DependentUpon>NewsP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterP.Designer.cs">
+      <DependentUpon>RegisterP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendMessage.Designer.cs">
+      <DependentUpon>SendMessage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminsP.resx">
+      <DependentUpon>AdminsP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AmsCpcP.resx">
+      <DependentUpon>AmsCpcP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AmsGxP.resx">
+      <DependentUpon>AmsGxP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AmsNcP.resx">
+      <DependentUpon>AmsNcP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AmsPcwP.resx">
+      <DependentUpon>AmsPcwP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginP.resx">
+      <DependentUpon>LoginP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MdiAnaForm.resx">
+      <DependentUpon>MdiAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewsP.resx">
+      <DependentUpon>NewsP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterP.resx">
+      <DependentUpon>RegisterP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMessage.resx">
+      <DependentUpon>SendMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Connected Services\ServiceReference1\LoginCruds.wsdl" />
+    <None Include="Connected Services\ServiceReference1\UIArayuzForm.ServiceReference1.ConfirmedLoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\UIArayuzForm.ServiceReference1.LoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\UIArayuzForm.ServiceReference1.RegisterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\UIArayuzForm.ServiceReference1.UserShowResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\UIArayuzForm.ServiceReference1.Usrs.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference2\MessagesCrud.wsdl" />
+    <None Include="Connected Services\ServiceReference2\UIArayuzForm.ServiceReference2.AddedMessageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference2\UIArayuzForm.ServiceReference2.ConfirmedMessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference2\UIArayuzForm.ServiceReference2.MessageListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference2\UIArayuzForm.ServiceReference2.Part.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acuc_2-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdiparentimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdiParentimg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference2\MessagesCrud.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference2\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference2\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\LoginCruds.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
